@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it"> 
+<head>
+	<meta http-equiv="Content-type" content="txt/html; charset=utf-8" />
+	<title>Inserisci news - Amministrazione LLSIF - Sito Italiano</title>
+	<meta name="title" content ="Inserisci news" /> 
+	<meta name="description" content="Pagina amministrativa inserimento news" />
+	<link rel="shortcut icon" href="images/favicon.bmp" />
+	<link href="css/style.css" media="handheld,screen" rel="stylesheet" type="text/css" />
+	<link href="css/stylemobile.css" media="handheld,screen and (max-width:480px),only screen and (max-device-width:480px)" rel="stylesheet" type="text/css" />
+	<link href="css/styleprint.css" media="print" rel="stylesheet" type="text/css" /> 
+	<!--Javascript-->
+	<script type="text/javascript" src="javascript/javascriptAdminNews.js"></script>
+</head> 
+
+
+<body>
+
+	<!--HEADER-->
+	<div id="header">
+		<h1><span xml:lang="en">Love Live! School Idol Festival</span></h1>
+	</div>
+	
+	<!--BREADCRUMP-->
+	<div id="breadcrump">
+		<p>Ti trovi in: Amministrazione - Inserisci News</p> 
+	</div>
+	
+	<div id="container"> <!--questo div contiene menu+content e serve ad allinearli nello stile-->
+	
+	<!--MENU-->
+		<div id="menu">
+			<ul class="primoliv">
+				<li>Inserisci News</li>
+				<li><a href="adminleggiNews.php?pagina6=true" name="pagina6">Gestisci News</a></li>
+				<li><a href="adminCarte.php?pagina3=true" name="pagina3">Inserisci Carta</a></li> 
+			</ul>
+		<ul id="adminSection">
+		<li><a href="logout.php?log=true" name="log">Logout</a></li>
+		</ul>
+		</div> <!--fine menu-->
+
+	<!--CONTENT-->
+	<div id="content">
+    	<form id="inserimentoNews" action="inserisciNews.php" method="post">
+			<fieldset id="dati">
+				<legend>Informazioni</legend>
+				<label for="dataNotizia">Data Notizia</label>
+				<div>	
+					<input type="text" id="dataNotizia" name="dataNotizia" value="" maxlength="10" onblur="inserireData()" onkeyup="inserireData()"/><br/>
+				</div>
+				<label for="titolo">Titolo</label>
+				<div>	
+					<input type="text" id="titolo" name="titolo" maxlength="100" onblur="inserireTitolo()" onkeyup="inserireTitolo()"/><br/>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Notizia</legend>
+				<label for="testoNotizia">Testo</label>
+			<div>	
+				<textarea rows="5" cols="100" id="testoNotizia" name="testoNotizia" onblur="inserireTesto()" onkeyup="inserireTesto()"></textarea>
+			</div>	
+			</fieldset>
+			<fieldset id="insertDeleteButton">
+				<input type="submit" id="buttonInserisci" name="submit" value="Inserisci" onfocus="checkAll()" />
+				<input type="reset" id="buttonCancella" value="Cancella" />
+			</fieldset>
+		</form>
+
+	
+	</div>
+	</div> <!--fine div contenitore-->
+	<!--FOOTER-->
+	<div id="footer">
+		<img id="imgValidCode" src="images/valid-xhtml10.png" alt="XHTML valido" />
+		<img id="imgValidCSS" src="images/vcss-blue.gif" alt="CSS valido" />
+		<p>Il sito è stato creato per l'esame del corso di Tecnologie Web, perciò non rappresenta veramente il sito ufficiale di Love Live! School Idol Festival</p>
+		<p>Coró Giulia, Pozza Marco, Marani Alessandro</p>
+		
+	</div>
+	</body>
+</html>

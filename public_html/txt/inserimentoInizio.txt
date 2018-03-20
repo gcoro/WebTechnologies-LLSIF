@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it"> 
+<head>
+	<meta http-equiv="Content-type" content="txt/html; charset=utf-8" />
+	<title>Inserisci Carta - Amministrazione LLSIF - Sito Italiano</title>
+	<meta name="title" content ="Inserisci carta nel database" /> 
+	<meta name="description" content="Pagina amministrativa inserimento news" />
+	<link rel="shortcut icon" href="images/favicon.bmp" />
+	<link href="css/style.css" media="handheld,screen" rel="stylesheet" type="text/css" />
+	<link href="css/stylemobile.css" media="handheld,screen and (max-width:480px),only screen and (max-device-width:480px)" rel="stylesheet" type="text/css" />
+	<link href="css/styleprint.css" media="print" rel="stylesheet" type="text/css" />
+	<!--javascript-->
+	<script type="text/javascript" src="javascript/javascript.js"></script>
+</head> 
+
+
+<body>
+	<p><a id="navigationHelp" href="#iniziopagina">Salta i link di navigazione</a></p> <!--aiuto alla navigazione-->
+	<!--HEADER-->
+	<div id="header">
+		<h1><span xml:lang="en">Love Live! School Idol Festival</span></h1>
+	</div>
+	
+	<!--BREADCRUMP-->
+	<div id="breadcrump">
+		<p>Ti trovi in: Amministrazione - Inserisci Carta</p> 
+	</div>
+	
+	<div id="container"> <!--questo div contiene menu+content e serve ad allinearli nello stile-->
+	
+	<!--MENU-->
+	<div id="menu">
+		<ul class="primoliv">
+			<li><a href="adminInserisciNews.php">Inserisci News</a></li>
+			<li><a href="adminleggiNews.php?pagina6=true" name="pagina6">Gestisci News</a></li>				
+			<li><a href="adminCarte.php?pagina3=true">Inserisci Carta</a></li>
+		</ul>
+			<ul id="adminSection">
+				<li><a href="logout.php?varLogout=true" name="varLogout">Logout</a></li>
+			</ul>
+	
+	</div> <!--fine menu-->
+
+
+	<!--CONTENT-->
+	<div id="content">
+	<a name="iniziopagina"></a> 

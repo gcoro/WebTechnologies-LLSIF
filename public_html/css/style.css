@@ -1,0 +1,364 @@
+/*tolgo le impostazioni predefinite dei browser: */
+
+* {
+	padding: 0em;
+	margin: 0em;
+}
+
+html, body {
+	background-color: #4d94ff;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	/* max-width: 1024px; tolto perche' in alcuni desktop lo visualizza troppo piccolo */
+	margin: auto; /*lo centra*/ 
+}
+
+/*aiuti alla navigazione: rendo il link visibile SOLO agli SCREENREADER */
+#navigationHelp {
+	display: block; 
+	height: 0; 
+	overflow: hidden;
+}
+
+/*colore link*/
+a:link { 
+	color: #FF69B4;
+}
+
+a.bcrump:link {
+	color: white;
+}
+
+a.linkesterno:link {
+	color: #4d94ff;
+}
+
+a:hover {
+	font-style: italic;
+}
+
+/*colore link visitati*/
+a:visited {
+	color: #800080;
+}
+
+/* HEADER (titolo) */
+
+#header { 
+	padding: 1.0em; 
+	text-align: center;
+}
+
+/* soluzione per far visualizzare il titolo come immagine, 
+ma farlo leggere dagli screenreader: */
+
+#header h1 {
+	background-image: url(CSSimages/titolo.png);
+	background-size: contain; /*cosi il background image si ridimensiona con la pagina :D*/
+	height: 5em;
+	background-repeat: no-repeat;
+    background-position: center;
+}
+
+#header h1 span {
+	display: block; 
+	height: 0; 
+	overflow: hidden;
+}
+
+/* BREADCRUMP */
+
+#breadcrump { 
+	width: 96%;
+	margin-left: 2%;
+	background-color: #FF69B4; 
+	color: white; 
+	font-size: 1em; 
+	font-weight: bold;
+	border-top-left-radius: 2em;
+	border-top-right-radius: 2em;
+}
+
+#breadcrump p {
+	padding: 0.5em 0.5em 2.5em 2.5em; /* alto -Dx -basso - Sx */ 
+}
+
+/*contenitore*/
+#container
+{
+	border: 1px solid #DDD;
+	border-radius: 2em; 
+	width: 96%;
+	margin-left: 2%; 
+	display: table; /*riferito agli elementi al suo interno (menu e content)*/
+	/*posizionamento per renderlo piu carino rispetto al breadcrump: */
+	position: relative; 
+	bottom: 2em;
+	z-index: 1;  /*lo sposta in primo piano*/
+}
+
+/* MENU DI NAVIGAZIONE */
+#menu {
+	background-color: white;
+	font-size: 1em; 
+	font-weight: bold; 
+	overflow: hidden; /*se non ci sta nel suo spazio viene tagliato */
+	display: table-cell; 
+	vertical-align: top;
+	width: 15%;
+	border-right: 1px solid #FF69B4;
+	border-bottom-left-radius: 2em;
+	border-top-left-radius: 2em;
+}
+
+#menu ul.primoliv{ 
+	list-style: none;
+	list-style-type: none; 
+	padding: 0.8em 0em 0.8em 1.5em; /* alto -Dx -basso - Sx */ 
+}
+
+#menu ul li { 
+	padding-bottom: 0.5em; 
+	padding-top: 0.5em; 
+}
+
+#menu ul li ul.secondoliv {
+	list-style-type: circle;
+	font-size: 0.9em; 
+	padding-left: 2em;
+	padding-top: 0.5em;
+}
+
+#menu ul#adminSection {
+	list-style: none;
+	list-style-type: none; 
+	margin: 0em 1em 0em 1em; /* alto -Dx -basso - Sx */ 
+	border-top: 1px solid #FF69B4;
+	padding: 0.5em 0.5em 0em 0.5em; /* alto -Dx -basso - Sx */ 
+}
+
+
+/* CONTENUTO*/
+
+#content {
+	background-color: white;
+	font-size: 0.9em; 
+	display: table-cell;
+	width: 75%;
+	padding: 1em; 
+	border-top-right-radius: 2em; 
+	border-bottom-right-radius: 2em;
+}
+
+#content h2 {
+	font-size: 1.5em;
+
+}
+
+#content h3 {
+	font-size: 1.2em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+#content p {
+	padding-top: 0.4em; 
+	padding-bottom: 0.4em;
+}
+
+#content p.inEvidenza
+{
+	font-weight: bold;
+}
+
+/*BottoniDL*/
+
+.bottoneDL {
+	background-color: #ffe2f2;
+	border: 2px solid #FF69B4;
+	padding: 1em;
+	margin: 1em;
+	display: inline; 
+	border-radius: 1em; 
+	position: relative; 
+	top: 2.5em; 
+}
+
+/*PAGINA idoL*/
+
+#logoMuse {
+	background-image: url(CSSimages/muselogo.png);
+	background-size: contain; /*la background image si ridimensiona con la pagina*/
+	height: 3em;
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+#logoMuse span {
+	display: block; 
+	height: 0; 
+	overflow: hidden;
+}
+
+#logoAqours {
+	background-image: url(CSSimages/aqourslogo.png);
+	background-size: contain; /*la background image si ridimensiona con la pagina*/
+	height: 3em;
+	background-repeat: no-repeat;
+	background-position: center; 
+ 
+}
+
+#logoAqours span {
+	display: block; 
+	height: 0; 
+	overflow: hidden;
+}
+
+
+img.miniaturaIdol {
+	clear: both;
+	float: left;
+	height: 6em;
+}
+
+a.tornasu {
+	float: right; 
+}
+
+/*footer*/
+
+#footer {
+	color: white; 
+	text-align: right;
+	font-size: 0.7em;
+	width: 98%;
+	position: relative; 
+	bottom: 1em;
+}
+
+#imgValidCSS { 
+	float: right; 
+	padding-left: 1.5em;
+}
+
+#imgValidCode { 
+	float: right; 
+}
+
+/*pagina errore 404*/
+
+#content404 {
+	background-color: white;
+	font-size: 0.9em; 
+	display: table-cell;
+	width: 75%;
+	padding: 1em; 
+	border-top-right-radius: 2em; 
+	border-bottom-right-radius: 2em;
+	padding:1.5em;
+}
+
+#content404 h2 {
+	padding: 0.2em;
+	font-size: 2em;
+}
+
+#content404 button {
+	margin-top: 1em;
+}
+
+#content404 img#grafica404 {
+	float: right; 
+	width: 20%;
+}
+/*Form carte*/
+
+fieldset {
+	padding: 0.5em;
+	border-radius: 0.5em; 
+	border: 1px solid #ddd;
+}
+
+/* NEWS */
+.article div ul 
+{
+	padding: 0.5em;
+	padding-left: 1.3em; 
+
+}
+
+.article {
+	border-bottom: 1px solid #FF69B4;
+	padding-bottom: 1.5em;
+	padding-top: 1.5em;
+}
+
+.dataNews, .titleNews {
+	display: inline;
+	color: #FF69B4; 
+}
+
+.dataNews:after {
+	content: " - ";
+}
+
+.article p a.eliminaNews {
+	font-weight: bold; 
+	float: right;
+}
+
+
+/* SEZIONE ADMINISTRATIVA */
+
+#login label, input{
+	margin: 0.5em;
+}
+
+/*taBELLA carte*/ 
+
+#tabellaC {
+	border: 1px solid #ddd; 
+	border-collapse: collapse;
+	width: 97%; 
+}
+
+#tabellaC thead th {
+	border: 1px solid #ddd; 
+	border-collapse: collapse;
+}
+
+#tabellaC tbody tr td {
+		border: 1px solid #ddd; 
+		border-collapse: collapse;
+		vertical-align: middle; 
+		text-align: left;
+		padding: 0.5em;
+		width: auto; 
+}
+
+#tabellaC tbody tr td.rigaMessaggio {
+	font-weight: bold; 
+}
+
+#tabellaC tbody tr td.errore {
+		color: red; 
+		font-weight: bold;
+}
+
+#tabellaC tbody tr td img {
+		width: auto;
+		height: 15em;
+}
+
+#tabellaC tbody tr td dl dd {
+  display: inline;
+  margin: 0;
+}
+#tabellaC tbody tr td dl dd:after{
+  display: block;
+  content: '';
+}
+
+#tabellaC tbody tr td dl dt{
+  display: inline-block;
+  font-weight: bold;
+}

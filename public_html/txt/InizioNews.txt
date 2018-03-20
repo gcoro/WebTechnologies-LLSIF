@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it"> 
+	<head>
+		<meta http-equiv="Content-type" content="txt/html; charset=utf-8" />
+		<title>News - Love Live! School Idol Festival - LLSIF - Sito Italiano</title>
+		<meta name="title" content ="News relative a Love Live School Idol Festival" /> 
+		<meta name="description" content="News relative a Love Live School Idol Festival" />
+		<meta name="keywords" content="news, notizie, aggiornamenti, love live, school idol festival, LLSIF, SIF, lovelive, gioco, carte, canzoni, smartphone, guida, Android, iOs" />
+		<link rel="shortcut icon" href="images/favicon.bmp" />
+		<link href="css/style.css" media="handheld,screen" rel="stylesheet" type="text/css" />
+		<link href="css/stylemobile.css" media="handheld,screen and (max-width:480px),only screen and (max-device-width:480px)" rel="stylesheet" type="text/css" />
+		<link href="css/styleprint.css" media="print" rel="stylesheet" type="text/css" />
+	
+</head> 
+<body>
+	<p><a id="navigationHelp" href="#iniziopagina">Salta i link di navigazione</a></p> <!--aiuto alla navigazione-->
+		<!--HEADER-->
+		<div id="header">
+			<h1><span xml:lang="en">Love Live! School Idol Festival</span></h1>
+		</div>
+		
+		<!--BREADCRUMP-->
+		<div id="breadcrump">
+			<p>Ti trovi in: <span xml:lang="en">News</span></p> 
+		</div>
+		
+		<div id="container"> <!--questo div contiene menu+content e serve ad allinearli nello stile-->
+		
+		<!--MENU-->
+		<div id="menu">
+			<ul class="primoliv">
+				<li xml:lang="en"><a href="index.html">Home</a></li>
+				<li xml:lang="en">News</li> <!--linka alla funzione php che stampa la pagina-->
+				<li><a href="gioco.html">Gioco</a>
+					<ul class="secondoliv">
+						<li xml:lang="en"><a href="idol.html">School Idol</a></li> 
+						<li><a href="carte.html">Carte</a></li>
+					</ul>
+				</li>
+				<li xml:lang="en"><a href="download.html">Downloads</a></li>
+			</ul>
+			<ul id="adminSection">
+				<li><a href="admin.php?adm=true" name="adm">Sezione Amministrativa</a></li>
+			</ul>
+		</div> <!--fine menu-->
+		
+		<!--CONTENT-->
+		<div id="content">
+		<a name="iniziopagina"> </a>
+

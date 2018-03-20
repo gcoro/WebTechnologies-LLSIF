@@ -1,0 +1,15 @@
+	
+		</div>
+				
+		</div> <!--fine div contenitore-->
+	
+	<!--FOOTER-->
+	<div id="footer">
+		<img id="imgValidCode" src="images/valid-xhtml10.png" alt="XHTML valido" />
+		<img id="imgValidCSS" src="images/vcss-blue.gif" alt="CSS valido" />
+		<p>Il sito è stato creato per l'esame del corso di Tecnologie Web, perciò non rappresenta veramente il sito ufficiale di Love Live! School Idol Festival</p>
+		<p>Coró Giulia, Pozza Marco, Marani Alessandro</p>
+		
+	</div>
+	</body>
+</html>

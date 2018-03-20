@@ -1,0 +1,92 @@
+
+*{
+	background-color: white;
+	color: black;
+	padding: 0em;
+	margin: 0em;
+	font-family: "Times New Roman", Times, serif;
+}
+
+
+/*cose per i link*/
+
+a {
+	color: black;
+}
+
+a[href]:after{
+	content: " ( http://tecweb2016.studenti.math.unipd.it/mapozza/public_html/" attr(href) " ) "; 
+	/*sostituisco i link con l indirizzo completo*/
+}
+
+a.linkesterno[href]:after {
+	content: " ( " attr(href) " ) ";
+}
+
+a.anchor[href]:after {
+	content: none;
+}
+
+/*stampo solo i contenuti importanti*/
+#loginbar, #menu, #breadcrump {
+	display: none;
+}
+
+#header {
+	background: none;
+	position: static; 
+	font-size: 18pt;
+	text-align: center; 
+}
+
+#content {
+	position: static; 
+	font-size: 14pt; 
+	text-align: justify;
+	padding: 3pt;
+}
+
+#footer img {
+	display: none;
+}
+
+#footer {
+	font-size: 11pt; 
+	border-top: 1pt solid #ddd;
+	margin: 5pt;
+}
+
+.tornasu {
+	display: none;
+}
+
+/*pagina news */
+
+#content .article {
+	border: 1pt solid #ddd;
+	padding: 5pt;
+	margin: 5pt;
+}
+
+#content .article ul {
+	padding-left: 12pt;
+	
+}
+
+.dataNews, .titleNews {
+	display: inline;
+}
+
+
+/*pagina idol */
+
+.miniaturaIdol {
+	display: none;
+}
+
+
+
+#navigationHelp {
+	display: none;
+}
+

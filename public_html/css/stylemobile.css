@@ -1,0 +1,99 @@
+html, body {
+	background-color: #4d94ff;;
+}
+
+/*nascondo tutte le immagini non necessarie (praticamente lascio solo quelle delle carte) */
+img.miniaturaIdol  {
+	display: none;
+}
+
+#imgValidCSS { 
+	display: none;
+}
+
+#imgValidCode { 
+	display: none;
+}
+
+#header h1 { 
+	background-image: none;
+	height: auto;
+}
+
+#header h1 span { 
+	position: static; 
+	height: auto;
+	color: white;
+}
+
+#breadcrump {
+	display: none;
+}
+
+#container {
+	position: static; 
+	border-radius: 0em; 
+	width: auto; 
+	margin: 0em;
+	border: none;
+	border-top: 1px solid #FF69B4;
+}
+
+#menu {
+	border-radius: 0em; 
+	width: auto;
+	border: 0px solid #000;
+}
+  
+#menu ul.primoliv {
+	padding: 0em;
+}
+
+
+#menu ul li {
+	border-bottom: 1px solid #FF69B4;
+	padding-left: 0.5em;
+}
+
+#adminSection {
+	display: none;
+}
+
+#content {
+	border-radius: 0em; 
+	width: auto;
+}
+
+#content404 {
+	border-radius: 0em; 
+	width: auto;
+}
+
+#menu,#content {
+	display: block; 
+}
+
+#menu,#content404 {
+	display: block; 
+}
+
+#footer {
+	position: static;
+	padding-top: 1em; 
+}
+
+
+.bottoneDL {
+	text-align: center;
+	background-color: #ffe2f2;
+	border: 2px solid #FF69B4;
+	padding: 1em;
+	margin: 1.5em;
+	display: block;
+	border-radius: 1em; 
+	position: static; 
+}
+
+#tabellaC {
+	width: auto;
+}

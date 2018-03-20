@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it"> 
+<head>
+	<meta http-equiv="Content-type" content="txt/html; charset=utf-8" />
+	<title>Inserisci Carta - Amministrazione LLSIF - Sito Italiano</title>
+	<meta name="title" content ="Inserisci carta nel database" /> 
+	<link rel="shortcut icon" href="images/favicon.bmp" />
+	<link href="css/style.css" media="handheld,screen" rel="stylesheet" type="text/css" />
+	<link href="css/stylemobile.css" media="handheld,screen and (max-width:480px),only screen and (max-device-width:480px)" rel="stylesheet" type="text/css" />
+	<link href="css/styleprint.css" media="print" rel="stylesheet" type="text/css" />
+	<!--javascript-->
+	<script type="text/javascript" src="javascript/javascriptAdminCarte.js"></script>
+</head> 
+
+
+<body>
+	<p><a id="navigationHelp" href="#iniziopagina">Salta i link di navigazione</a></p> <!--aiuto alla navigazione-->
+	<!--HEADER-->
+	<div id="header">
+		<h1><span xml:lang="en">Love Live! School Idol Festival</span></h1>
+	</div>
+	
+	<!--BREADCRUMP-->
+	<div id="breadcrump">
+		<p>Ti trovi in: Amministrazione - Inserisci Carta</p> 
+	</div>
+	
+	<div id="container"> <!--questo div contiene menu+content e serve ad allinearli nello stile-->
+	
+	<!--MENU-->
+	<div id="menu">
+		<ul class="primoliv">		
+			<li><a href="adminNews.php?pagina4=true" name="pagina4">Inserisci News</a></li>		
+			<li><a href="adminleggiNews.php?pagina6=true" name="pagina6">Gestisci News</a></li>		
+			<li>Inserisci Carta</li>
+		</ul>
+		<ul id="adminSection">
+		<li><a href="logout.php?log=true" name="log">Logout</a></li>
+		</ul>
+
+
+	</div> <!--fine menu-->
+
+
+	<!--CONTENT-->
+	<div id="content">
+	<a name="iniziopagina"></a>
+	<form title="form per l'inserimento delle carte nel database" action="inserisciCarte.php" method="post">
+	<fieldset>
+		<legend>Inserimento nuova carta</legend>
+			<label for="nome">Nome:</label>
+		<div>	
+			<input type="text" id="nome" name="nome" maxlength="20" tabindex="1" onblur="checkNomeAdmin()" onkeyup="checkNomeAdmin()"/>
+		</div>	
+			<label for="cognome">Cognome:</label>
+		<div>	
+			<input type="text" id="cognome" name="cognome" maxlength="20" tabindex="2" onblur="checkCognomeAdmin()" onkeyup="checkCognomeAdmin()"/>
+		</div>
+			<label for="immagineCarta">Immagine (inserire il nome del file immagine, compresa l'estensione)</label>
+		<div>	
+			<input type="text" id="immagineCarta" name="immagineCarta" tabindex="3"/>
+		</div>
+			<label for="idCarta">ID:</label>
+		<div>	
+			<input type="text" id="idCarta" name="idCarta" maxlength="5" tabindex="4" onblur="checkIDAdmin()" onkeyup="checkIDAdmin()"/>
+		</div>
+			<label for="livMax">Livello massimo:</label>
+		<div>	
+			<input type="text" id="livMax" name="livMax" maxlength="20" tabindex="5" onblur="checkLivelloMassimoAdmin()" onkeyup="checkLivelloMassimoAdmin()"/>
+		</div>
+			
+			<label for="attCool">Punti Cool:</label>
+		<div>	
+			<input type="text" id="attCool" name="attCool" maxlength="20" tabindex="6" onblur="checkAttributiCoolAdmin()" onkeyup="checkAttributiCoolAdmin()"/>
+		</div>	
+			<label for="attSmile">Punti Smile:</label>
+		<div>	
+			<input type="text" id="attSmile" name="attSmile" maxlength="20" tabindex="7" onblur="checkAttributiSmileAdmin()" onkeyup="checkAttributiSmileAdmin()" />
+		</div>	
+			<label for="attPure">Punti Pure:</label>
+		<div>	
+			<input type="text" id="attPure" name="attPure" maxlength="20" tabindex="8" onblur="checkAttributiPureAdmin()" onkeyup="checkAttributiPureAdmin()"/>
+		</div>	
+
+			<label for="attStamina">Stamina:</label>
+		<div>
+			<input type="text" id="attStamina" name="attStamina" maxlength="20" tabindex="9" onblur="checkStaminaAdmin()" onkeyup="checkStaminaAdmin()" />
+		</div>
+			<label for="rarita">Rarita':</label>
+			<select id="rarita" name="rarita" tabindex="10">
+				<option value="N" selected="selected">N</option>
+				<option value="R">R</option>
+				<option value="SR">SR</option>
+				<option value="SSR">SSR</option>
+				<option value="UR">UR</option>
+			</select>
+		<br/>
+			<label for="set">Set:</label>
+		<div>
+			<input type="text" id="set" name="set" maxlength="20" tabindex="11"/>
+		</div>
+		
+			<label for="tipoCarta">Tipo carta:</label>
+			<select id="tipoCarta" name="tipoCarta"  tabindex="12">
+				<option value="b" selected="selected">base</option>
+				<option value="i">idolizzata</option>
+			</select>
+		<br/>
+			<label for="skill">Nome abilità:</label>
+		<div>	
+			<input type="text" id="skill" name="skill" maxlength="20" tabindex="13" />
+		</div>	
+			<label for="descrizioneSkill">Descrizione abilità:</label>
+		<div>
+			<textarea rows="5" cols="20" id="descrizioneSkill" name="descrizioneSkill" tabindex="14"></textarea>
+		</div>
+		</fieldset>
+		
+		<fieldset>
+			<legend>Bottoni</legend>
+			<input type="submit" id="submit" name="submit" value="Inserisci carta" onfocus="ControllaTuttoAdmin()"/>
+			<input type="reset" id="buttonCancella" value="Cancella" />
+		</fieldset>
+		
+	</form>
+	
+
+	
+	</div> <!--fine content-->
+	</div> <!--fine div contenitore-->
+	
+	<!--FOOTER-->
+	<div id="footer">
+		<img id="imgValidCode" src="images/valid-xhtml10.png" alt="XHTML valido" />
+		<img id="imgValidCSS" src="images/vcss-blue.gif" alt="CSS valido" />
+		<p>Il sito è stato creato per l'esame del corso di Tecnologie Web, perciò non rappresenta veramente il sito ufficiale di Love Live! School Idol Festival</p>
+		<p>Coró Giulia, Pozza Marco, Marani Alessandro</p>
+		
+	</div>
+
+
+</body>
+
+</html>
